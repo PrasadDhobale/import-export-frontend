@@ -1,0 +1,24 @@
+<div class="form-container">
+  <form [formGroup]="myForm">
+
+    <div class="form-group">
+      <label for="hsn">HSN Code:</label>
+      <input id="hsn" formControlName="hsn" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="from">From:</label>
+      <input id="from" formControlName="from" type="text" />
+    </div>
+
+    <div class="form-group">
+      <label for="to">To:</label>
+      <input id="to" formControlName="to" type="text" />
+    </div>
+
+    <div class="button-group">
+      <button type="button" (click)="onImport()">Import</button>
+      <button type="button" (click)="onExport()">Export</button>
+    </div>
+  </form>
+</div>
